@@ -38,7 +38,7 @@ export async function getStaticPaths() {
   // console.log("paths", paths);
   return {
     paths,
-    fallback: false,
+    fallback: true,
   };
 }
 export const getStaticProps: GetStaticProps = async ({ params }) => {
